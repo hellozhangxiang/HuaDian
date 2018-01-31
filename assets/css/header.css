@@ -1,0 +1,25 @@
+header div:first-child {
+min-width:1500px;
+text-align:center;
+}
+header div:nth-child(2) {
+	background:#1C5AAE;
+}
+header  ul{
+	margin:0 auto;
+	line-height:45px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	width:1000px;
+	display:flex;
+	justify-content:space-between;
+}
+
+header  ul li{
+	width:100px;
+}
+header a:hover{
+	color:white;
+	cursor:pointer;
+}

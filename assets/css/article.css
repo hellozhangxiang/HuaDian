@@ -1,0 +1,13 @@
+article{
+	clear:both;
+	margin-top:20px;
+	background:#1c5aae;
+}
+article div{
+	text-align:center;
+	line-height:30px;
+	color:#fff;
+}
+article div p.copyright{
+
+}

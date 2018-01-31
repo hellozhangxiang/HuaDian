@@ -1,0 +1,20 @@
+nav div:first-child{
+	height:400px;
+	overflow:hidden;
+}
+
+nav div:firstchild{
+	height:400px;
+}
+nav div#nav div{
+	height:100%;
+	/*width:200%;*/
+	/*animation:lunbo 3s infinite;*/
+}
+nav div#nav div img{
+	float:left;
+}
+@keyframes lunbo{
+0%{transform:translate(0,0)}
+100%{transform:translate(-1000px,0)}
+}

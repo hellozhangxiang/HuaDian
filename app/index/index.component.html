@@ -1,0 +1,59 @@
+<myheader></myheader>
+<p id="prds"><span>产品展示</span></p>
+<div id="smlNav">
+  <div>
+    <div mydirective>
+      <img *ngFor="let item of myProductImg" [src]="item.pimg" alt="">
+      <!--小轮播1000*254.8，了解和技术支持480*60/79*30 右边500-60/79*30  color: #333;-->
+      <!--font-size: 16px;font-weight: 400;-->
+    </div>
+  </div>
+</div>
+<section>
+  <div>
+    <p id="know">
+      <span>了解</span>
+      <img src="img/about-us.png" alt="">
+    </p>
+    <p>
+      <span>技术支持</span>
+      <ul>
+        <li id="d1">
+          <ul>
+            <li><a href="#">灰系统</a></li>
+            <li><a href="#">灰库卸料设备</a></li>
+            <li><a href="#">电袋除尘设备</a></li>
+          </ul>
+        </li>
+        <li id="d2">
+          <ul>
+            <li><a href="#">渣系统</a></li>
+            <li><a href="#">分选设备</a></li>
+            <li><a href="#">DCS/PLC控制系统等工程</a></li>
+          </ul>
+        </li>
+      </ul>
+      <span class="sp">合作客户</span>
+      <ul id="hz">
+        <li *ngFor="let item of myCustomerImg"><a href="#"><img [src]="item.cimg" alt=""></a></li>
+      </ul>
+  </div>
+</section>
+<footer>
+  <div>
+    <span class="sp">华电动态</span>
+    <div *ngFor="let item of myDynamicImg" style="display:inline-block">
+      <p><img [src]="item.img" alt=""></p>
+      <h3>{{item.titleMaster}}</h3>
+      <span>{{item.content}}</span>
+    </div>
+  </div>
+  <div>
+    <span class="sp">华电荣誉</span>
+    <ul>
+      <li *ngFor="let item of myHonorImg "><img [src]="item.himg" alt=""></li>
+    </ul>
+  </div>
+</footer>
+<myfooter></myfooter>
+<router-outlet></router-outlet>
